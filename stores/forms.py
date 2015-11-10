@@ -3,8 +3,9 @@ from django.contrib.gis.geos import GEOSGeometry
 from django.utils.translation import ugettext as _
 from oscar.core.loading import get_class, get_model
 
+#geocode = get_class('stores.services', 'geocode')
+from stores.services import geocode
 
-geocode = get_class('stores.services', 'geocode')
 StoreGroup = get_model('stores', 'StoreGroup')
 
 
